@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "angular19": {
+    "TaskManagement": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/angular19",
+            "outputPath": "dist/TaskManagement",
             "browser": "src/main.ts",
             "index": "src/index.html",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular19:build:production"
+              "buildTarget": "TaskManagement:build:production"
             },
             "development": {
-              "buildTarget": "angular19:build:development"
+              "buildTarget": "TaskManagement:build:development"
             }
           },
           "defaultConfiguration": "development"
