@@ -1,0 +1,33 @@
+<section class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="mx-auto flex max-w-4xl flex-col gap-6 px-4 py-10 lg:px-0">
+    <div class="flex items-center gap-3 text-sm text-slate-300">
+      <a
+        routerLink="/"
+        class="rounded-lg border border-slate-800 px-3 py-2 transition hover:border-indigo-400 hover:text-indigo-200"
+      >
+        ← Back to list
+      </a>
+      <div class="text-xs uppercase tracking-[0.18em] text-slate-500">Task detail</div>
+    </div>
+
+    <ng-container *ngIf="loading(); else loaded">
+      <div class="rounded-2xl border border-slate-800/70 bg-slate-900/80 p-6 text-sm text-slate-300">
+        Loading task...
+      </div>
+    </ng-container>
+  </div>
+</section>
+
+<ng-template #loaded>
+  <ng-container *ngIf="task$ | async as task; else notFound">
+    <app-task-detail [task]="task" />
+  </ng-container>
+</ng-template>
+
+<ng-template #notFound>
+  <div class="mx-auto flex max-w-4xl px-4 py-6">
+    <div class="w-full rounded-2xl border border-slate-800/70 bg-slate-900/80 p-6 text-center text-sm text-slate-300">
+      Task not found. <a routerLink="/" class="text-indigo-300 hover:text-indigo-200">Return to tasks</a>.
+    </div>
+  </div>
+</ng-template>
