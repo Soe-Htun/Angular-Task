@@ -74,13 +74,13 @@
           </span>
           <input
             class="rounded-lg bg-slate-900 px-3 py-2 text-slate-100 focus:outline-none"
-            [ngClass]="hasError('title') ? 'border border-rose-500 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
+            [ngClass]="hasError('title') ? 'border border-rose-400 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
             type="text"
             formControlName="title"
             placeholder="Define sprint goals"
           />
           @if (getFieldError('title'); as error) {
-            <span class="text-xs font-semibold text-rose-300">{{ error }}</span>
+            <span class="text-xs font-semibold text-rose-400">{{ error }}</span>
           }
         </label>
 
@@ -95,7 +95,7 @@
             placeholder="Add more detail about this task"
           ></textarea>
           @if (getFieldError('description'); as error) {
-            <span class="text-xs font-semibold text-rose-300">{{ error }}</span>
+            <span class="text-xs font-semibold text-rose-400">{{ error }}</span>
           }
         </label>
 
@@ -106,7 +106,7 @@
             </span>
             <select
               class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-slate-100 focus:outline-none"
-              [ngClass]="hasError('priority') ? 'border border-rose-500 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
+              [ngClass]="hasError('priority') ? 'border border-rose-400 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
               formControlName="priority"
             >
               @for (priority of priorityOptions; track priority) {
@@ -120,7 +120,7 @@
             </span>
             <select
               class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-slate-100 focus:outline-none"
-              [ngClass]="hasError('status') ? 'border border-rose-500 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
+              [ngClass]="hasError('status') ? 'border border-rose-400 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
               formControlName="status"
             >
               @for (status of statusOptions; track status) {
@@ -156,13 +156,13 @@
           </span>
           <input
             class="rounded-lg bg-slate-900 px-3 py-2 text-slate-100 focus:outline-none"
-            [ngClass]="hasError('title') ? 'border border-rose-500 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
+            [ngClass]="hasError('title') ? 'border border-rose-400 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
             type="text"
             formControlName="title"
             placeholder="Define sprint goals"
           />
           @if (getFieldError('title'); as error) {
-            <span class="text-xs font-semibold text-rose-300">{{ error }}</span>
+            <span class="text-xs font-semibold text-rose-400">{{ error }}</span>
           }
         </label>
 
@@ -177,7 +177,7 @@
             placeholder="Add more detail about this task"
           ></textarea>
           @if (getFieldError('description'); as error) {
-            <span class="text-xs font-semibold text-rose-300">{{ error }}</span>
+            <span class="text-xs font-semibold text-rose-400">{{ error }}</span>
           }
         </label>
 
@@ -188,7 +188,7 @@
             </span>
             <select
               class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-slate-100 focus:outline-none"
-              [ngClass]="hasError('priority') ? 'border border-rose-500 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
+              [ngClass]="hasError('priority') ? 'border border-rose-400 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
               formControlName="priority"
             >
               @for (priority of priorityOptions; track priority) {
@@ -202,7 +202,7 @@
             </span>
             <select
               class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-slate-100 focus:outline-none"
-              [ngClass]="hasError('status') ? 'border border-rose-500 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
+              [ngClass]="hasError('status') ? 'border border-rose-400 focus:border-rose-400' : 'border border-slate-800 focus:border-indigo-400'"
               formControlName="status"
             >
               @for (status of statusOptions; track status) {

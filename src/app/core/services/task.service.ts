@@ -6,7 +6,6 @@ import {
   CreateTaskDto,
   Task,
   TaskFilters,
-  TaskPage,
   TaskPriority,
   TaskStatus,
   UpdateTaskDto
